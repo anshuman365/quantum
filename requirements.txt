@@ -1,2 +1,2 @@
 qiskit
-qiskit-aer
+qiskit-aer==0.16.1
