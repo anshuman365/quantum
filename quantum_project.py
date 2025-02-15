@@ -2,7 +2,7 @@ import qiskit_aer
 print(qiskit_aer.__version__)
 
 from qiskit import QuantumCircuit, transpile, assemble
-from qiskit.providers.aer import Aer, execute
+from qiskit.aer import Aer, execute
 
 # Create a quantum circuit with 1 qubit and 1 classical bit
 qc = QuantumCircuit(1, 1)
