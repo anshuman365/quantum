@@ -1,3 +1,6 @@
+import qiskit_aer
+print(qiskit_aer.__version__)
+
 from qiskit import QuantumCircuit, transpile, assemble
 from qiskit.providers.aer import Aer, execute
 
