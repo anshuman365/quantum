@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Telegram Tracker Pro</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.0.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.1.0"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Multi-User Telegram Tracker</h1>
+        
+        <div id="statusPanel" class="dashboard-section">
+            <h2>Current Statuses</h2>
+            <div id="userStatuses" class="status-grid"></div>
+        </div>
+
+        <div class="dashboard-section">
+            <h2>Activity Timeline</h2>
+            <div class="chart-container">
+                <canvas id="timelineChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/tracker.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+body {
+    background: #0f0f0f;
+    color: #00ffcc;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    text-align: center;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.chart-container {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffcc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+}
+
+.log-container {
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffcc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #001a14;
+    padding: 15px;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+
+
+.dashboard-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    backdrop-filter: blur(10px);
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.status-card {
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.status-card.online {
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid #00ff00;
+}
+
+.status-card.offline {
+    background: rgba(255, 0, 0, 0.1);
+    border: 1px solid #ff0040;
+}
+
+.status-indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+.online .status-indicator {
+    background: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.offline .status-indicator {
+    background: #ff0040;
+    box-shadow: 0 0 10px #ff0040;
+}
+
+.chart-container {
+    height: 400px;
+    position: relative;
+}
